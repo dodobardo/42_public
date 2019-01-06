@@ -10,7 +10,7 @@ if [ "$OPENSSL" ]; then
     elif $OPENSSL version | grep -E "1\.0\.[[:digit:]][[:alnum:]]?" > /dev/null; then
         cnf="$1/openssl-1.0.0.cnf"
     else
-        cnf="$1/openssl.cnf"
+        cnf="$1/openssl-1.0.0.cnf"
     fi
 fi
 
